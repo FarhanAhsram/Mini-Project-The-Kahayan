@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Kahayan</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-top">
+        <div class="container-fluid">
+          <a class="navbar-brand font-header">The Kahayan</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            style="background-color: white;"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav navbar-ul">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../menu.html">Menu</a>
+              </li>
+              <button
+                type="button"
+                class="btn reserve-button"
+                data-bs-toggle="modal"
+                data-bs-target="#reservePopUp"
+                style="font-size: 16px"
+              >
+                Reservation
+              </button>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="reservePopUp"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog" style="max-width: 500px">
+          <div class="modal-content">
+            <div class="modal-reserve d-flex flex-column">
+              <span class="title-reserve font-type" style="font-size: 2em;">Reservation</span>
+              <form>
+                <div class="input-reserve mb-3">
+                  <label for="">Name</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="input-reserve mb-2">
+                  <label for="">Telephone</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <div class="input-reserve">
+                      <label for="">Event Date</label>
+                      <input type="date" class="form-control" />
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="input-reserve">
+                      <label for="">Time</label>
+                      <input type="time" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+                <div class="input-reserve mt-3 mb-3">
+                  <label for="">Amount of People</label>
+                  <input type="number" class="form-control" />
+                </div>
+                <div class="input-reserve mb-3">
+                  <label for="">Special Notes or Requests</label>
+                  <textarea name="" id="" class="form-control"></textarea>
+                </div>
+              </form>
+              <div>
+                <button type="button" class="btn button-reserve mt-2">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb" class="nav-bread">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="tag-bread" href="../menu.html">Menu</a></li>
+        <li class="breadcrumb-item"><a class="tag-bread" href="../dessert.html">Dessert</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Crème Brulée</li>
+      </ol>
+    </nav>
+
+    <main>
+      <!-- Detail Menu -->
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <img class="img-fluid detail-img mb-2" src="../images/dessert/cremebrulee.jpg" alt="" />
+            </div>
+            <div class="detail-body col-md-5">
+              <h2 class="mb-3">Crème Brulée</h2>
+              <p>
+                This creme brûlée is a simple but elegant dessert that will impress all of your guests! You just can't beat a creamy custard topped with caramelized sugar and delicious fresh fruit!
+              </p>
+              <h2 class="detail-corner">IDR 120,000</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer mt-4">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="d-flex flex-column gap-3 footer-media">
+            <h2>Contact Us</h2>
+            <a href=""
+              ><i class="bi bi-envelope"></i> Email : thekahayan@tkgroup.com</a
+            >
+            <a href=""><i class="bi bi-facebook"></i> Facebook : The Kahayan</a>
+            <a href=""
+              ><i class="bi bi-instagram"></i> Instagram :
+              @thekahayan</a
+            >
+            <a href=""><i class="bi bi-twitter"></i> Twitter : The_Kahayan</a>
+            <a href=""
+              ><i class="bi bi-whatsapp"></i> WhatsApp : 081234567890</a
+            >
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <br /><br />
+          <p style="font-size: 18px">
+            Jl. Tjilik Riwut No. 10, Palangka,
+            Kecamatan Jekan Raya, Kota Palangka Raya, Kalimantan Tengah 73112
+          </p>
+          <p style="font-size: 19px; font-weight: bold">Open Hours</p>
+          <p>Monday-Friday : 10:00 AM - 09:00 PM</p>
+          <p>Saturday-Sunday : 10:00 AM - 11:00 PM</p>
+        </div>
+      </div>
+      <br />
+      <div class="footer-copyright">
+        Copyright ©2023 The Kahayan - All rights reserved.
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>

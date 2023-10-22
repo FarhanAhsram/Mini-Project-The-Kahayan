@@ -1,0 +1,17 @@
+Modal -> Vertikal Center
+Carousel -> Autoplay
+
+Nama Pengumpulan File
+"Assignment_Mini-Project-Bootstrap_Farhan Marsha"
+
+Deadline : 21 Oktober
+Review Mentor : 22 Oktober
+
+Penulisan Code CSS
+Menggunakan Strip (.sign-up)
+
+Penulisan Code HTML
+Menggunakan CamelCase (signUp)
+
+Yg Belum Dipakai
+- Ubah Footer
